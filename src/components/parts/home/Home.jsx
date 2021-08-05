@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 
-export default function Home(props) {
+export default function Home({ data, home }) {
   return (
     <div
       style={{
@@ -22,7 +22,7 @@ export default function Home(props) {
           borderRadius: "50%",
         }}
         width="200vh"
-        src={props.data?.image}
+        src={data?.face}
         alt="Face"
       ></img>
       <div
@@ -33,8 +33,8 @@ export default function Home(props) {
           alignItems: "center",
         }}
       >
-        <Typography variant="h5">{props.data?.name}</Typography>
-        <p>I'm a{props.data?.slogans[0]}</p>
+        <Typography variant="h5">{data?.name}</Typography>
+        <p>I'm a{home?.slogans[0]}</p>
       </div>
     </div>
   );

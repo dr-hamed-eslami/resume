@@ -10,7 +10,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 
-export default function LeftBar({ open, setOpen }) {
+export default function LeftBar({ data, open, setOpen }) {
   return (
     <Drawer variant="persistent" anchor="left" open={open}>
       <div>
@@ -26,7 +26,7 @@ export default function LeftBar({ open, setOpen }) {
       <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>
+            <ListItemIcon icon={<i className="fa fa-user-graduate fa-lg"></i>}>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
             <ListItemText primary={text} />

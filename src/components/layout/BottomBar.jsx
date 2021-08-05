@@ -1,10 +1,6 @@
 import React from "react";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import RestoreIcon from "@material-ui/icons/Restore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
-import FolderIcon from "@material-ui/icons/Folder";
 
 export default function BottomBar({ title, setOpen }) {
   return (
@@ -16,24 +12,24 @@ export default function BottomBar({ title, setOpen }) {
       }}
     >
       <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<RestoreIcon />}
+        label="Educations"
+        value="educations"
+        icon={<i className="fa fa-user-graduate fa-lg"></i>}
       />
       <BottomNavigationAction
-        label="Favorites"
-        value="favorites"
-        icon={<FavoriteIcon />}
+        label="Honors"
+        value="honors"
+        icon={<i className="fa fa-award fa-lg"></i>}
       />
       <BottomNavigationAction
-        label="Nearby"
-        value="nearby"
-        icon={<LocationOnIcon />}
+        label="Profession"
+        value="profession"
+        icon={<i className="fa fa-user-tie fa-lg"></i>}
       />
       <BottomNavigationAction
-        label="Folder"
-        value="folder"
-        icon={<FolderIcon />}
+        label="Home"
+        value="home"
+        icon={<i className="fa fa-house-user fa-lg"></i>}
       />
     </BottomNavigation>
   );
