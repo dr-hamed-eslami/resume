@@ -3,6 +3,7 @@ import Home from "./components/parts/home/Home";
 import TopBar from "./components/layout/TopBar";
 import BottomBar from "./components/layout/BottomBar";
 import LeftBar from "./components/layout/LeftBar";
+import AboutMe from "./components/parts/home/AboutMe";
 
 function App() {
   const [data, setData] = useState(null);
@@ -30,6 +31,7 @@ function App() {
       <div>
         <LeftBar open={open} setOpen={setOpen}></LeftBar>
         <Home data={data?.general} home={data?.home}></Home>
+        <AboutMe aboutme={data?.aboutme}></AboutMe>
       </div>
       <BottomBar></BottomBar>
     </>

@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function AboutMe({ data, aboutme }) {
-  return <div></div>;
+export default function AboutMe({ aboutme }) {
+  return (
+    <div>
+      <p>{aboutme?.description}</p>
+    </div>
+  );
 }
