@@ -1,0 +1,15 @@
+{
+  "general": {
+    "name": "Hamed Eslami",
+    "face": "./images/face.jpg",
+    "avatar": "./images/avatar.png",
+    "avatarSmall": "./images/avatar-small.png"
+  },
+  "home": {
+    "sloganPrefix": "Computer Vision is fun; ",
+    "slogans": ["Let's learn it!", "Let's use it!", "Let's love it!"]
+  },
+  "aboutme": {
+    "description": "Hi!"
+  }
+}

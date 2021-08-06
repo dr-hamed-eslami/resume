@@ -10,7 +10,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 
-export default function LeftBar({ data, open, setOpen }) {
+export default function LeftBar({ open, setOpen }) {
   return (
     <Drawer variant="persistent" anchor="left" open={open}>
       <div>

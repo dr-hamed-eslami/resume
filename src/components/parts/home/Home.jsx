@@ -1,5 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import MailIcon from "@material-ui/icons/Mail";
 
 export default function Home({ data, home }) {
   return (
@@ -34,7 +36,15 @@ export default function Home({ data, home }) {
         }}
       >
         <Typography variant="h5">{data?.name}</Typography>
-        <p>I'm a{home?.slogans[0]}</p>
+        <p>
+          {home?.sloganPrefix}
+          {home?.slogans[0]}
+        </p>
+        <br />
+        <div>
+          <LinkedInIcon />
+          <MailIcon />
+        </div>
       </div>
     </div>
   );

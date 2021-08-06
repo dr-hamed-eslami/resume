@@ -6,7 +6,6 @@ import LeftBar from "./components/layout/LeftBar";
 
 function App() {
   const [data, setData] = useState(null);
-  const [home, setHomeData] = useState(null);
   const [open, setOpen] = useState(false);
   const getData = (address, setData) => {
     fetch(address, {
@@ -22,16 +21,15 @@ function App() {
   };
 
   useEffect(() => {
-    getData("/data/home/home.json", setHomeData);
-    getData("/data/data.json", setData);
+    getData("/data.json", setData);
   }, []);
 
   return (
     <>
-      <TopBar title={data?.name} setOpen={setOpen}></TopBar>
+      <TopBar title={data?.general.name} setOpen={setOpen}></TopBar>
       <div>
-        <LeftBar data={data} open={open} setOpen={setOpen}></LeftBar>
-        <Home data={data} home={home}></Home>
+        <LeftBar open={open} setOpen={setOpen}></LeftBar>
+        <Home data={data?.general} home={data?.home}></Home>
       </div>
       <BottomBar></BottomBar>
     </>
