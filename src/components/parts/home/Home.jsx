@@ -27,11 +27,8 @@ export default function Home({ data, home }) {
         flexDirection: "column",
         alignItems: "center",
         borderColor: "red",
-        // paddingTop: "10vh",
         padding: 0,
         margin: 0,
-        // height: "80vh",
-        // backgroundColor: "red",
       }}
     >
       <img
