@@ -27,8 +27,8 @@ export default function Home({ data, home }) {
         flexDirection: "column",
         alignItems: "center",
         borderColor: "red",
-        padding: 0,
-        margin: 0,
+        // padding: 0,
+        // margin: 0,
       }}
     >
       <img
@@ -49,11 +49,10 @@ export default function Home({ data, home }) {
         }}
       >
         <Typography variant="h5">{data?.name}</Typography>
-        <p>
+        <Typography color="textSecondary" gutterBottom>
           {home?.sloganPrefix}
           {home?.slogans[0]}
-        </p>
-        <br />
+        </Typography>
         <div>
           <Tooltip
             TransitionComponent={Fade}

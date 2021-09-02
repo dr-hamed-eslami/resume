@@ -10,7 +10,13 @@
     "slogans": ["Let's learn it!", "Let's use it!", "Let's love it!"]
   },
   "aboutme": {
-    "description": "As an experienced artificial intelligence researcher with a demonstrated history of working in the computer software industry for more than 5 years, I have been trying my best to use latest technologies, in different fields of industry, like sports, ITS (Intelligent Transportation Systems) and etc. Strong engineering professional with a Bachelor's degree focused on Electrical and Electronics Engineering encouraged me to design the hardware as well as the firmware needed to implement prototypes of the mentioned system as well as a good knowledge to handle with intelligent embedded systems. Right now, I am concentrated on industrial usage of computer vision and looking forward to achieving such opportunities.",
-    "avatar": "./images/avatar.png"
+    "description": "It has been more than 15 years that I have been using artificial intelligence and specially computer vision to solve problems in dirrefent industries, like sports, ITS (Intelligent Transportation Systems) and video surveilance.",
+    "avatar": "./images/avatar.png",
+    "skills": [
+      ["Artificial Intelligence", 90],
+      ["Software Developement", 60],
+      ["DevOps", 40]
+    ],
+    "resume": "./data/Hamed Eslami CV_20201125.pdf"
   }
 }

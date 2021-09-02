@@ -32,7 +32,10 @@ function App() {
         <LeftBar open={open} setOpen={setOpen}></LeftBar>
         <Home data={data?.general} home={data?.home}></Home>
         <AboutMe aboutme={data?.aboutme}></AboutMe>
+        <br></br>
       </div>
+      <p></p>
+      <br></br>
       <BottomBar></BottomBar>
     </>
   );
